@@ -16,6 +16,16 @@ Endpoints:
 Repositorio:
 https://github.com/hrquinones/app-test-node.git
 
+- Estructura directorios
+config              # Variables de entorno y cosas relacionadas con la configuración
+src
+│   app.js          # Punto de entrada de la aplicación
+└───controllers     # Controllers para todos los endpoints de la app
+└───resources       # Recursos o archivos fuentes
+└───routes          # Express route para los endpoint de la app
+└───services        # Toda la logica de negocio o servicios en esta carpeta 
+test
+
 # Pre-requisitos 📋
 -Node 
 -Npm

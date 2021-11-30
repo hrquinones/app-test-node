@@ -99,3 +99,16 @@ const app = require('../src/app');
             .expect(404, done);
     });
 });
+
+/****
+ * Testing get files endpoint
+ */
+
+ describe('GET /v1/files', function () {
+    it('respond with json containing list files uploads', function (done) {
+        request(app)
+            .get('/v1/files')
+            .set('Accept','application/json')
+            .expect(200, done);
+    });
+});
